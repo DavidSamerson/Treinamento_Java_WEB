@@ -1,0 +1,7 @@
+package br.com.caelum.jdbc;
+
+import java.sql.Connection;
+
+public class ConnectionFactory {
+	public Connection getConnection("jdbc:mysql://localhost/fj21", "root", "");
+}
