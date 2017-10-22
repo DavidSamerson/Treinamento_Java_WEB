@@ -1,0 +1,29 @@
+package dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import conexao.Connexao;
+import modelo.Contato;
+
+public class Dao2 {
+	
+	Connection conexao;
+	
+	public Dao2(){
+		conexao = new Connexao().pegarConexao();
+	}
+	
+	public void Cadastrar(Contato contato){
+		
+		String sql = "insert into contatos (nome, email, endereco, dataNascimento) values (?,?,?,?)";
+		
+		try {
+			PreparedStatement stmt = conexao.prepareStatement(sql);
+		} catch (SQLException e) {
+			throw new RuntimeException(e);
+		}
+		
+	}
+}

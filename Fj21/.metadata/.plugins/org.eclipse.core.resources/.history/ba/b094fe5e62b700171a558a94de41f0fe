@@ -1,0 +1,14 @@
+package dao;
+
+import java.sql.Connection;
+
+import conexao.Connexao;
+
+public class Dao2 {
+	
+	Connection conexao;
+	
+	public Dao2(){
+		conexao = Connexao().pegarConexao();
+	}
+}
