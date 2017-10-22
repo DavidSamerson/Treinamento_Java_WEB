@@ -11,6 +11,7 @@ import br.com.caelum.jdbc.modelo.Contato;
 public class ContatoDao {
 	private Connection connection;
 	
+	
 	public ContatoDao(){
 		this.connection = new ConnectionFactory().getConnection();
 	}

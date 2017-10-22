@@ -1,0 +1,15 @@
+package dao;
+
+import java.sql.Connection;
+
+import conexao.Connexao;
+
+public class ConnectionFactory {
+	
+	Connection conexao;
+	
+	public ConnectionFactory(){
+		this.conexao = new Connexao.pegarConexao();
+	}
+
+}
