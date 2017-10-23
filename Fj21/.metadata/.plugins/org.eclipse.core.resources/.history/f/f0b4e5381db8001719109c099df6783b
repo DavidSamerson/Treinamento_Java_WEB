@@ -70,9 +70,7 @@ public class Dao2 {
 			return contatos;
 			
 		} catch (SQLException e) {
-			
 			throw new RuntimeException(e);
-			
 		}
 	}
 }
