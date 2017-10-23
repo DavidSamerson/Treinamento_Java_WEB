@@ -10,7 +10,7 @@ public class TestaCadastro {
 	
 		ContatoDao dao = new ContatoDao();
 		
-		for (int i = 0; i < 100; i++) {
+		for (int i = 0; i < 10000; i++) {
 		
 		Contato contato = new Contato();
 		contato.setNome("David " + i);
