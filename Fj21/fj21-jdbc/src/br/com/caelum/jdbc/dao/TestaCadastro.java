@@ -19,6 +19,8 @@ public class TestaCadastro {
 		contato.setDataNascimento(Calendar.getInstance());
 		
 		dao.adiciona(contato);
+		
+		System.out.println("Contato Adicionado" +i);
 		}
 		
 	}
