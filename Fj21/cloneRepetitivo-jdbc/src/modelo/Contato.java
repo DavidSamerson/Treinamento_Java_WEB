@@ -4,12 +4,18 @@ import java.sql.Date;
 import java.util.Calendar;
 
 public class Contato {
+	private Long id;
 	private String nome;
 	private String email;
-	private String endereço;
+	private String endereco;
 	private Calendar dataNascimento;
 	
-	
+	public Long getId() {
+		return id;
+	}
+	public void setId(long id) {
+		this.id = id;
+	}
 	public String getNome() {
 		return nome;
 	}
@@ -22,11 +28,11 @@ public class Contato {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public String getEndereço() {
-		return endereço;
+	public String getEndereco() {
+		return endereco;
 	}
-	public void setEndereço(String endereço) {
-		this.endereço = endereço;
+	public void setEndereco(String endereco) {
+		this.endereco = endereco;
 	}
 	public Calendar getDataNascimento() {
 		return dataNascimento;
@@ -34,6 +40,6 @@ public class Contato {
 	public void setDataNascimento(Calendar dataNascimento) {
 		this.dataNascimento = dataNascimento;
 	}
-	
+
 	
 }
