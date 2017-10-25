@@ -1,7 +1,0 @@
-package br.com.caelum.jdbc.dao;
-
-import java.sql.Connection;
-
-public class ContatoDao {
-	private Connection connection;
-}
