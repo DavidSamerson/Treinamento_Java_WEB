@@ -102,4 +102,17 @@ public class ContatoDao {
 		}
 	}
 	
+	public void remover(Contato contato){
+		
+		try {
+			
+			PreparedStatement stmt = connection.prepareStatement("delete from contatos where id = ?");
+			stmt.setLong(1, contato.getId());
+			stmt.execute();
+			stmt.close();
+			
+		} catch (SQLException e) {
+			throw new RuntimeException(e);
+		}
+	}
 }
