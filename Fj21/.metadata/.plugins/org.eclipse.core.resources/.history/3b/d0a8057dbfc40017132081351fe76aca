@@ -1,6 +1,6 @@
 package modelo;
 
-import java.util.Calendar;
+import java.sql.Date;
 
 public class Contato {
 	
