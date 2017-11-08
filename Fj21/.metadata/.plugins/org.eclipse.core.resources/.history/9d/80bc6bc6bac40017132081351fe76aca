@@ -1,0 +1,21 @@
+package dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import conexao.Conexao;
+import modelo.Contato;
+
+public class ConexaoFactory {
+
+	private Connection conexao;
+	
+	public ConexaoFactory(){
+		this.conexao = new Conexao().pegarConexao();
+	}
+	
+	public void adicionar(Contato contato){
+		String sql = "INSERT INTO contatos (nome, email, endereco, dataNascimento) VALUES (?,?,?,?)";
+		PreparedStatement stmt =  conexao.prepareStatement(sql);
+	}
+}
