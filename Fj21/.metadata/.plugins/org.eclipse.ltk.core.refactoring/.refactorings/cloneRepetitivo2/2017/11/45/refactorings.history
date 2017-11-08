@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;conexao.Conexão&apos; to &apos;Conexao&apos;&#x0D;&#x0A;- Original project: &apos;cloneRepetitivo2&apos;&#x0D;&#x0A;- Original element: &apos;conexao.Conexão&apos;&#x0D;&#x0A;- Renamed element: &apos;conexao.Conexao&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Conexão&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;conexao{Conexão.java[Conexão" matchStrategy="1" name="Conexao" qualified="false" references="true" similarDeclarations="false" stamp="1510166137347" textual="false" version="1.0"/>
+</session>
