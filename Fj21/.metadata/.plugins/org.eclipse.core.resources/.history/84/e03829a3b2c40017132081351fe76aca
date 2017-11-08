@@ -1,0 +1,9 @@
+package conexao;
+
+public class Conexão {
+	
+	public void pegarConexao(){
+		
+	}
+
+}

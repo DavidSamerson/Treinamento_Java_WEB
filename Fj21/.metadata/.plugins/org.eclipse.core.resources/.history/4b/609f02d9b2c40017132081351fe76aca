@@ -1,0 +1,16 @@
+package conexao;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class Conexão {
+	
+	public Connection pegarConexao(){
+		try {
+			return DriverManager.getConnection("","");
+		} catch (Exception e) {
+			
+		}
+	}
+
+}
