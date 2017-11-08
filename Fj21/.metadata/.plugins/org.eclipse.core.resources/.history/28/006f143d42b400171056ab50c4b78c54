@@ -1,7 +1,0 @@
-package testeRepetitivo1;
-
-public class ConnectionFactory {
-	public Connection getConnection(){
-		
-	}
-}
