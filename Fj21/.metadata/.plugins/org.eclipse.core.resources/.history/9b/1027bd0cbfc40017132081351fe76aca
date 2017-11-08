@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
-import conexao.Conexao;
+import conexao.Connexao;
 import modelo.Contato;
 
 public class ConexaoFactory {
@@ -31,7 +31,7 @@ public class ConexaoFactory {
 			stmt.setString(1, contato.getNome());
 			stmt.setString(2, contato.getEmail());
 			stmt.setString(3, contato.getEndereco());
-			stmt.setDate(4, new Date(contato.getDataNascimento().getTimeInMillis()));
+			stmt.setDate(4, new Date(contato.getDataNascimento().getTim1qeInMillis()));
 			
 			stmt.execute();
 			stmt.close();
