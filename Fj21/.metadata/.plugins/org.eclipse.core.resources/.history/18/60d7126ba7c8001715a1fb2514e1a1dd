@@ -98,16 +98,11 @@ public class ConexaoFactory {
 	public void excluirContato(Contato contato){
 		
 		try {
-			
 			PreparedStatement stmt = conexao.prepareStatement("DELETE * FROM contatos WHERE id = ?");
 			
-			stmt.setLong(1, contato.getId());
-			
-			stmt.execute();
-			stmt.close();
 			
 		} catch (SQLException e) {
-			throw new RuntimeException(e);
+			
 		}
 	}
 }

@@ -78,36 +78,16 @@ public class ConexaoFactory {
 				+ "WHERE id = ? ";
 		
 		try {
-			
 			PreparedStatement stmt = conexao.prepareStatement(sql);
 			
 			stmt.setString(1, contato.getNome());
-			stmt.setString(2, contato.getEmail());
-			stmt.setString(3, contato.getEndereco());
-			stmt.setDate(4, new Date(contato.getDataNascimento().getTimeInMillis()));
-			stmt.setLong(5, contato.getId());
+			stmt.setString(1, contato.getEmail());
+			stmt.setString(1, contato.getEndereco());
+			stmt.setDate(1, new Calendar( contato.getDataNascimento()));
+			stmt.setString(1, contato.getNome());
 			
-			stmt.execute();
-			stmt.close();
-			
-		} catch (SQLException e) {
-			throw new RuntimeException(e);
-		}
-	}
-	
-	public void excluirContato(Contato contato){
-		
-		try {
-			
-			PreparedStatement stmt = conexao.prepareStatement("DELETE * FROM contatos WHERE id = ?");
-			
-			stmt.setLong(1, contato.getId());
-			
-			stmt.execute();
-			stmt.close();
-			
-		} catch (SQLException e) {
-			throw new RuntimeException(e);
+		} catch (Exception e) {
+			// TODO: handle exception
 		}
 	}
 }
