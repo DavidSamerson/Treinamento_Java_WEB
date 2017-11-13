@@ -1,8 +1,0 @@
-package modelo;
-
-public class Contato {
-	private String nome;
-	private String email;
-	private String endereço;
-	private Date dataNascimento;
-}
